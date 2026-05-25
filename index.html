@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>亲爱的丹晴</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景星星效果 -->
+    <div class="stars"></div>
+    
+    <!-- 开场页面 -->
+    <div class="page" id="page1">
+        <div class="container">
+            <div class="content-center">
+                <div class="heart-animation">❤</div>
+                <h1 class="title">亲爱的丹晴</h1>
+                <p class="subtitle">有些话，我想用最特别的方式告诉你</p>
+                <button class="btn" onclick="nextPage()">点击开启我的心声</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 道歉页面 -->
+    <div class="page" id="page2" style="display: none;">
+        <div class="container">
+            <div class="content">
+                <div class="page-header">
+                    <h2>我想对你说</h2>
+                    <div class="letter-content">
+                        <p class="apology-text">
+                            丹晴，对不起。
+                        </p>
+                        <p class="apology-text">
+                            我知道有时候我不够体贴，不够细心。我犯过很多错误，说过伤你心的话，做过让你失望的事。这些我都记得，每一次我都能感受到你的失望，那时候我特别后悔。
+                        </p>
+                        <p class="apology-text">
+                            我想你知道的是，那些都不是故意的。我只是有时候不够成熟，不够理解你。但正是因为你的包容和耐心，我才一点点变得更好。
+                        </p>
+                        <p class="apology-text">
+                            感谢你没有放弃我，感谢你给我改正的机会。从现在开始，我会更加珍惜你，照顾你，爱你。
+                        </p>
+                        <p class="apology-text">
+                            对不起，让我重新开始好吗？
+                        </p>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-prev" onclick="prevPage()">上一页</button>
+                    <button class="btn" onclick="nextPage()">继续</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 回忆页面 -->
+    <div class="page" id="page3" style="display: none;">
+        <div class="container">
+            <div class="content">
+                <div class="page-header">
+                    <h2>我们的美好时光</h2>
+                </div>
+                <div class="memories">
+                    <div class="memory-item">
+                        <span class="emoji">😊</span>
+                        <p>还记得我们第一次见面时，你笑得那么甜蜜</p>
+                    </div>
+                    <div class="memory-item">
+                        <span class="emoji">🌙</span>
+                        <p>那些在月光下的对话，你的陪伴让我感到温暖</p>
+                    </div>
+                    <div class="memory-item">
+                        <span class="emoji">🎬</span>
+                        <p>看电影时你靠在我肩膀上的感觉，我想永远珍藏</p>
+                    </div>
+                    <div class="memory-item">
+                        <span class="emoji">🍽️</span>
+                        <p>一起吃过的每一顿饭都是一份温馨的回忆</p>
+                    </div>
+                    <div class="memory-item">
+                        <span class="emoji">🎵</span>
+                        <p>你哼唱的歌谣是我最喜欢听的音乐</p>
+                    </div>
+                    <div class="memory-item">
+                        <span class="emoji">💫</span>
+                        <p>每一个和你在一起的时刻都闪闪发光</p>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-prev" onclick="prevPage()">上一页</button>
+                    <button class="btn" onclick="nextPage()">继续</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 表白页面 -->
+    <div class="page" id="page4" style="display: none;">
+        <div class="container">
+            <div class="content">
+                <div class="page-header">
+                    <h2>我最想说的话</h2>
+                </div>
+                <div class="confession">
+                    <div class="confession-heart">💕</div>
+                    <p class="confession-text">
+                        屈丹晴，我爱你。
+                    </p>
+                    <p class="confession-text">
+                        从第一次看到你的笑容，我就知道你对我有多特别。你不仅仅是我的女朋友，你是我的梦想、我的希望、我生命中最重要的那个人。
+                    </p>
+                    <p class="confession-text">
+                        我爱你的温柔，爱你的体贴，爱你的聪慧，爱你的所有一切。
+                    </p>
+                    <p class="confession-text">
+                        我想和你走过人生的每一个阶段，一起经历风雨，一起享受阳光。我想在你伤心时陪在你身边，在你开心时和你一起笑。
+                    </p>
+                    <p class="confession-text">
+                        我会用一生去珍惜你，去爱你。
+                    </p>
+                    <div class="love-line"></div>
+                    <p class="confession-sign">
+                        永远爱你的<br>郑豫洋<br>
+                        <span class="date">2026年5月25日</span>
+                    </p>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-prev" onclick="prevPage()">上一页</button>
+                    <button class="btn" onclick="nextPage()">我想回应你</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最后的承诺 -->
+    <div class="page" id="page5" style="display: none;">
+        <div class="container">
+            <div class="content">
+                <div class="page-header">
+                    <h2>我的承诺</h2>
+                </div>
+                <div class="promises">
+                    <div class="promise-item">
+                        <div class="promise-number">1</div>
+                        <p>我会珍惜你，把你当作最重要的人</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-number">2</div>
+                        <p>我会理解你，尊重你的想法和感受</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-number">3</div>
+                        <p>我会陪伴你，无论顺境还是逆境</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-number">4</div>
+                        <p>我会改变，让自己成为更好的人</p>
+                    </div>
+                    <div class="promise-item">
+                        <div class="promise-number">5</div>
+                        <p>我会爱你，永远爱你，直到永远</p>
+                    </div>
+                </div>
+                <div class="final-message">
+                    <p>丹晴，你愿意和我重新开始吗？</p>
+                    <p class="sub-message">给我一次机会，让我用行动来证明我的爱</p>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-prev" onclick="prevPage()">上一页</button>
+                    <button class="btn btn-yes" onclick="celebrate()">我愿意 💕</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 庆祝页面 -->
+    <div class="page" id="page6" style="display: none;">
+        <div class="container">
+            <div class="celebrate-content">
+                <div class="fireworks"></div>
+                <h2 class="celebrate-title">谢谢你！</h2>
+                <p class="celebrate-message">我会用一生去证明这个选择是对的</p>
+                <div class="celebrate-hearts">
+                    <span class="heart">❤</span>
+                    <span class="heart">💕</span>
+                    <span class="heart">💖</span>
+                </div>
+                <button class="btn" onclick="startAgain()">重新开始</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
